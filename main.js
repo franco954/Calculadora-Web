@@ -14,7 +14,7 @@ function step() {
     canvas.getContext('2d').fillStyle = 'rgba(0,0,0,0.05)';
     canvas.getContext('2d').fillRect(0, 0, canvas.width, canvas.height);
     
-    canvas.getContext('2d').fillStyle = '#007334';
+    canvas.getContext('2d').fillStyle = '#008a34';
     columns.map(function (value, index) {
         var character = String.fromCharCode(3e4 +
                                             Math.random() * 33);
@@ -27,7 +27,7 @@ function step() {
     })
 }
 
-setInterval(step, 30)
+setInterval(step, 33)
 
 
 
