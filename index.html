@@ -18,35 +18,28 @@
     <main>
         <div class="container">
             <div class="container_resultados">
-                <p class="container_resultados_mostrar"></p>
-                <p class="container_resultados_operaciones"></p>
+                <input type="text" placeholder="0" disabled id="pantalla_resultados">
             </div>
             <div class="container_opciones">
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>+</button>
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>-</button>
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button>/</button>
-                <button>0</button>
-                <button class="grid_res">=</button>  
-                <button>*</button>
+                <button value="1" onclick="tomarValor(this)">1</button>
+                <button value="2" onclick="tomarValor(this)">2</button>
+                <button value="3" onclick="tomarValor(this)">3</button>
+                <button value="+" onclick="tomarValor(this)">+</button>
+                <button value="4" onclick="tomarValor(this)">4</button>
+                <button value="5" onclick="tomarValor(this)">5</button>
+                <button value="6" onclick="tomarValor(this)">6</button>
+                <button value="-" onclick="tomarValor(this)">-</button>
+                <button value="7" onclick="tomarValor(this)">7</button>
+                <button value="8" onclick="tomarValor(this)">8</button>
+                <button value="9" onclick="tomarValor(this)">9</button>
+                <button value="/" onclick="tomarValor(this)">/</button>
+                <button value="0" onclick="tomarValor(this)">0</button>
+                <button value="=" onclick="calculate()" class="res">=</button>
+                <button value="C" class="borrar" onclick="borrar()">C</button>
+                <button value="*" onclick="tomarValor(this)">*</button>
             </div>
         </div>
     </main>
-
-
-
-
-
-
-
 
 
     <script src="main.js"></script>

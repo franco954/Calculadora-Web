@@ -30,4 +30,34 @@ function step() {
 setInterval(step, 33)
 
 
+// funcionalidad calculadora
 
+
+
+// eval -> evalua una cadena de caracteres
+// podemos ir juntando los caracteres sin tener que convertirlos a int a priori. y solo cuando se llame a eval se realizara la conversion.
+
+
+let pantalla = document.querySelector('#pantalla_resultados');
+
+function tomarValor(val){
+    let valor = val.value;
+    pantalla.value += valor;
+}
+
+function borrar(){
+    pantalla.value = '';
+}
+
+function calculate(){
+    if (pantalla.value != ''){
+        try {
+            pantalla.value = eval(pantalla.value);
+        } catch (error) {
+            pantalla.value = 'Error';
+            setTimeout(() => {
+                clean();
+            }, 500);
+        }
+    }
+}
