@@ -54,10 +54,7 @@ function calculate(){
         try {
             pantalla.value = eval(pantalla.value);
         } catch (error) {
-            pantalla.value = 'Error';
-            setTimeout(() => {
-                clean();
-            }, 500);
+            pantalla.value = '';
         }
     }
 }
