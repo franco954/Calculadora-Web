@@ -38,7 +38,7 @@ setInterval(step, 33)
 // podemos ir juntando los caracteres sin tener que convertirlos a int a priori. y solo cuando se llame a eval se realizara la conversion.
 
 
-let pantalla = document.querySelector('#pantalla_resultados');
+let pantalla = document.querySelector('#display');
 
 function tomarValor(val){
     let valor = val.value;
